@@ -17,7 +17,7 @@ import Recahat from './ReChart';
       {/* outlet */}
       <div className='bg-[#101B43] min-h-screen'>
         {/* card section */}
-          <div className='px-5 py-5 grid grid-cols-3 gap-3'>
+          <div className='px-5 py-5 grid lg:grid-cols-3 grid-cols-1 gap-3'>
          
           {/* card-1 */}
 
