@@ -1,16 +1,56 @@
-# React + Vite
+# 📋 Job Task Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + Tailwind CSS** admin dashboard for managing calls and appointments.  
+Live demo: [job-task-delta-ten.vercel.app](https://job-task-delta-ten.vercel.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Project Overview
 
-## React Compiler
+This dashboard allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- View and filter **Call Logs** with statuses
+- See detailed information for each call
+- Display a **Booking Link** with copy-to-clipboard functionality
+- List **Appointments** in a responsive table
+- Navigate between Dashboard sections: Overview, Call Logs, Appointments, Settings
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### 📊 Dashboard Overview
+- Dynamic page title based on route
+- Notification icon and profile avatar
+
+### 📞 Call Logs
+- Status badges like **AI Resolved**, **Warm Transfer**, **Appointment**
+- Call duration and outcome icons
+- Responsive layout for mobile and tablet (`sm:` & `md:` breakpoints)
+
+### 📅 Appointments
+- Table with 8 columns: Client Name, Phone, Email, Device, Repair Type, Date, Slot No, Start Time
+- Horizontal scroll for smaller screens
+- Clean styling with Tailwind borders and colors
+
+### 🔗 Booking Link
+- Read-only booking input
+- Copy link button with icon
+
+### ⚙️ Sidebar Navigation
+- Active route highlight
+- Links: Dashboard, Call Logs, Appointments, Settings
+- Log out button at the bottom
+
+---
+
+## 🚀 Tech Stack
+
+- **React** – Component-based UI
+- **Tailwind CSS** – Utility-first styling
+- **React Router Dom** – Routing & active links
+- **React Icons** – Icons for UI elements
+- **Vercel** – Deployment platform
+
+---
+

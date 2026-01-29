@@ -66,54 +66,53 @@ const CallLogs = () => {
       <div className="grid lg:grid-cols-9 grid-cols-1 bg-[#0B1438]">
 
         {/* ================= CALL LIST ================= */}
-     <div className="bg-[#0B1438] rounded-xl p-4 col-span-4">
-  <p className="text-lg font-medium mb-4">Call List</p>
+        <div className="bg-[#0B1438] rounded-xl p-4 col-span-4">
+          <p className="text-lg font-medium mb-4">Call List</p>
 
-  <div className="space-y-3 max-h-[70vh] overflow-y-auto">
-    {data.map((item, i) => (
-      <div
-        key={i}
-        className="flex flex-col sm:flex-row sm:items-center gap-3 bg-[#0E1A4A] border border-[#1A2A6C] rounded-lg p-3"
-      >
-        {/* Icon */}
-        <div className="w-9 h-9 rounded-full bg-blue-600 flex items-center justify-center text-xs flex-shrink-0">
-          <img src={callIcon} alt="" />
-        </div>
+          <div className="space-y-3">
+          {data.map((item, i) => (
+              <div
+                key={i}
+                className="flex gap-3 bg-[#0E1A4A] border border-[#1A2A6C] rounded-lg p-3"
+              >
+                <div className="w-9 h-9 rounded-full bg-blue-600 flex items-center justify-center text-xs">
+                 <img className='' src={callIcon} alt="" />
+                </div>
 
-        {/* Call Info */}
-        <div className="flex-1 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-          <div>
-            <p className="text-sm font-medium">+1 (555) 345-6789</p>
-            <p className="text-xs text-[#94A3B8] mt-0.5">2025-12-16 • 09:42 AM</p>
-          </div>
+                <div className="flex-1">
+                  <p className="text-sm font-medium">
+                    +1 (555) 345-6789
+                  </p>
+                  <p className="text-xs text-[#94A3B8] mt-0.5">
+                    2025-12-16 • 09:42 AM
+                  </p>
 
-          <div className="flex flex-wrap items-center gap-3 mt-2 sm:mt-0">
-            <p className="flex items-center gap-1 text-xs text-[#94A3B8]">
-              <img className="w-4 h-4" src={icon1} alt="" />
-              <span>5:23</span>
-            </p>
+                  <div className="flex items-center gap-4 whitespace-nowrap mt-1">
+  <p className="flex items-center gap-1 text-xs text-[#94A3B8]">
+    <img className="w-4 h-4" src={icon1} alt="" />
+    <span>5:23</span>
+  </p>
 
-            <p className="flex items-center gap-1 text-xs text-[#94A3B8]">
-              <img className="w-4 h-4" src={icon2} alt="" />
-              <span>Quote Provided</span>
-            </p>
+  <p className="flex items-center gap-1 text-xs text-[#94A3B8]">
+    <img className="w-4 h-4" src={icon2} alt="" />
+    <span>Quote Provided</span>
+  </p>
 
-            <span className="text-[11px] px-2 py-0.5 rounded bg-[#13276A] text-[#51A2FF]">
-              {item.tag}
-            </span>
-          </div>
-        </div>
-
-        {/* Status */}
-        <span
-          className={`text-[11px] h-fit px-2.5 py-0.5 rounded-full mt-2 sm:mt-0 ${item.color} ${item.border}`}
-        >
-          {item.status}
-        </span>
-      </div>
-    ))}
-  </div>
+  <span className="text-[11px] px-2 py-0.5 rounded bg-[#13276A] text-[#51A2FF] hidden lg:block">
+    {item.tag}
+  </span>
 </div>
+                </div>
+
+              <span
+  className={`text-[11px] h-fit px-2.5 py-0.5 rounded-full ${item.color} ${item.border}`}
+>
+  {item.status}
+</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* ================= CALL DETAILS ================= */}
       <div className=" rounded-2xl  p-5 text-white shadow-lg col-span-5">
