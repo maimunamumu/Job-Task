@@ -8,6 +8,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import CallLogs from './Pages/CallLogs/CallLogs';
 import Appoinment from './Pages/Appoinment/Appoinment';
 import Settings from './Pages/Settings/Settings';
+import Profile from './Pages/Profile/Profile';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
      {index:true,Component:Dashboard},
      {path:'/calllogs',Component:CallLogs},
      {path:'/appoinments',Component:Appoinment},
-     {path:'/settings',Component:Settings}
+     {path:'/settings',Component:Settings},
+     {path:'/profile',Component:Profile}
     ]
   },
 ]);

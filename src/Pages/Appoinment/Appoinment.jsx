@@ -35,109 +35,60 @@ export default function Appointment() {
           <p className="text-xs text-green-500">+8 this week</p>
         </div>
       </div>
-     <div className="px-6">
-         <div className="bg-[#111B3C] px-4 py-4 rounded-xl border border-[#162354] w-full mx-auto">
-        <label className="text-gray-300 text-lg mb-2 block">
-          Booking Link
-        </label>
+    <div className="px-6">
+  {/* Booking Link */}
+  <div className="bg-[#111B3C] px-4 py-4 rounded-xl border border-[#162354] w-full mx-auto mb-6">
+    <label className="text-gray-300 text-lg mb-2 block">Booking Link</label>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 bg-[#0B1120] p-2 rounded-lg border border-[#162354]">
-          <input
-            type="text"
-            readOnly
-           
-            className="bg-transparent text-gray-400 text-sm w-full outline-none px-2 py-1"
-          />
+    <div className="flex flex-col sm:flex-row items-center gap-4 bg-[#0B1120] p-2 rounded-lg border border-[#162354]">
+      <input
+        type="text"
+        readOnly
+        className="bg-transparent text-gray-400 text-sm w-full outline-none px-2 py-1"
+      />
 
-    <button className="bg-[#111B3C] hover:bg-[#1c2a5a] text-white px-6 py-2 rounded-md border border-blue-500/30 transition-all w-[150px] text-sm flex items-center justify-center gap-2 whitespace-nowrap">
-  <img className="w-4 h-4" src={icon} alt="copy" />
-  Copy Link
-</button>
+      <button className="bg-[#111B3C] hover:bg-[#1c2a5a] text-white px-6 py-2 rounded-md border border-blue-500/30 transition-all w-full sm:w-[150px] text-sm flex items-center justify-center gap-2 whitespace-nowrap">
+        <img className="w-4 h-4" src={icon} alt="copy" />
+        Copy Link
+      </button>
+    </div>
+  </div>
 
-        </div>
+  {/* Appointments Table */}
+  <div className="overflow-x-auto">
+    <div className="min-w-[800px] border border-blue-950 rounded-lg">
+      {/* Table Header */}
+      <div className="grid grid-cols-8 gap-4 p-4 bg-[#111B3C] border-b border-[#162354] text-sm font-medium text-gray-300">
+        <p>Client Name</p>
+        <p>Client Phone</p>
+        <p>Client Email</p>
+        <p>Device</p>
+        <p>Repair Type</p>
+        <p>Date</p>
+        <p>Slot No</p>
+        <p>Start Time</p>
       </div>
-     </div>
-      <div className="px-6 py-4">
-        <div className=" border border-blue-950">
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p>Client Name</p>
-            <p>Client Phone</p>
-            <p>Client Email</p>
-            <p>Device</p>
-            <p>Repair Type</p>
-            <p>Date</p>
-            <p>Slot No</p>
-            <p>Start Time</p>
-          </div>
 
-          {/* Row 1 */}
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p className="text-blue-500">Jane.D</p>
-            <p className="text-gray-300">01734499038</p>
-            <p className="text-gray-300">jane@gmail.com</p>
-            <p className="text-gray-300">Samsung</p>
-            <p className="text-gray-300">Screen</p>
-            <p className="text-gray-300">02/06/26</p>
-            <p className="text-gray-300">09</p>
-            <p className="text-gray-300">10:00</p>
-          </div>
-
-          {/* Row 2 */}
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p className="text-blue-500">Jane.D</p>
-            <p className="text-gray-300">01734499038</p>
-            <p className="text-gray-300">jane@gmail.com</p>
-            <p className="text-gray-300">Samsung</p>
-            <p className="text-gray-300">Screen</p>
-            <p className="text-gray-300">02/06/26</p>
-            <p className="text-gray-300">09</p>
-            <p className="text-gray-300">10:00</p>
-          </div>
-
-          {/* Row 3 */}
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p className="text-blue-500">Jane.D</p>
-            <p className="text-gray-300">01734499038</p>
-            <p className="text-gray-300">jane@gmail.com</p>
-            <p className="text-gray-300">Samsung</p>
-            <p className="text-gray-300">Screen</p>
-            <p className="text-gray-300">02/06/26</p>
-            <p className="text-gray-300">09</p>
-            <p className="text-gray-300">10:00</p>
-          </div>
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p className="text-blue-500">Jane.D</p>
-            <p className="text-gray-300">01734499038</p>
-            <p className="text-gray-300">jane@gmail.com</p>
-            <p className="text-gray-300">Samsung</p>
-            <p className="text-gray-300">Screen</p>
-            <p className="text-gray-300">02/06/26</p>
-            <p className="text-gray-300">09</p>
-            <p className="text-gray-300">10:00</p>
-          </div>
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p className="text-blue-500">Jane.D</p>
-            <p className="text-gray-300">01734499038</p>
-            <p className="text-gray-300">jane@gmail.com</p>
-            <p className="text-gray-300">Samsung</p>
-            <p className="text-gray-300">Screen</p>
-            <p className="text-gray-300">02/06/26</p>
-            <p className="text-gray-300">09</p>
-            <p className="text-gray-300">10:00</p>
-          </div>
-          <div className="grid grid-cols-8 gap-6 p-4 bg-[#111B3C] border border-[#162354] text-sm">
-            <p className="text-blue-500">Jane.D</p>
-            <p className="text-gray-300">01734499038</p>
-            <p className="text-gray-300">jane@gmail.com</p>
-            <p className="text-gray-300">Samsung</p>
-            <p className="text-gray-300">Screen</p>
-            <p className="text-gray-300">02/06/26</p>
-            <p className="text-gray-300">09</p>
-            <p className="text-gray-300">10:00</p>
-          </div>
-
+      {/* Table Rows */}
+      {[...Array(6)].map((_, i) => (
+        <div
+          key={i}
+          className="grid grid-cols-8 gap-4 p-4 bg-[#111B3C] border-b border-[#162354] text-sm text-gray-300"
+        >
+          <p className="text-blue-500">Jane.D</p>
+          <p>01734499038</p>
+          <p>jane@gmail.com</p>
+          <p>Samsung</p>
+          <p>Screen</p>
+          <p>02/06/26</p>
+          <p>09</p>
+          <p>10:00</p>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+
     </section>
   );
 }
